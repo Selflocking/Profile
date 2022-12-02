@@ -5,19 +5,14 @@ const aboutMe = "A undergraduate student in computer science."
 
 function Button({ text, url }) {
 
-    const handleClick = () => {
-        if (url !== undefined) {
-            window.open(url)
-        }
-    }
-
     return (
-        <div
+        <a
             className="Button"
-            onClick={handleClick}
+            href={url}
+            target="_blank"
         >
             {text}
-        </div>
+        </a>
     )
 }
 
