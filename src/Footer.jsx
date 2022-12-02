@@ -1,10 +1,9 @@
 import React from "react"
-
-
+import "./Footer.css"
 
 function Footer() {
     return (
-        <footer>
+        <footer className="Footer">
             {"Copyright © 2022 "}
             <a href='/'>YunShu</a>
             {" · "}

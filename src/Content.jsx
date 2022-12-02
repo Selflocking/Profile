@@ -1,33 +1,32 @@
 import React from "react";
+import "./Content.css";
+
+const aboutMe = "A undergraduate student in computer science."
 
 function Button({ text, url }) {
 
     const handleClick = () => {
         if (url !== undefined) {
-            // window.location.href = link
             window.open(url)
         }
     }
 
     return (
-        <button
+        <div
             className="Button"
             onClick={handleClick}
         >
             {text}
-        </button>
+        </div>
     )
 }
 
 function AboutMe() {
     return (
         <section
-            style={{
-                minWidth: "85%",
-                marginTop: "20px"
-            }}
+            className="AboutMe"
         >
-            A undergraduate student in computer science.
+            {aboutMe}
         </section>
     )
 }
@@ -35,16 +34,14 @@ function AboutMe() {
 function ContactMe() {
     return (
         <section
-            style={{
-                display: "grid"
-            }}
+            className="ContactMe"
         >
             <h3>Contact Me</h3>
-            <Button text="GitHub" url="https://github.com/Selflocking" />
-            <Button text="Blog" url="https://blog.yunshu.site" />
-            {/* <Button text="Email" url="im@yunshu.site" />
-            <Button text="QQ" url="2859976342" /> */}
-            <Button text="mastodon" url="https://o3o.ca/@YunShu" />
+            <div className="Buttons">
+                <Button text="GitHub" url="https://github.com/Selflocking" />
+                <Button text="Blog" url="https://blog.yunshu.site" />
+                <Button text="Mastodon" url="https://o3o.ca/@YunShu" />
+            </div>
         </section>
     )
 }
@@ -52,10 +49,7 @@ function ContactMe() {
 function Content() {
     return (
         <div
-            style={{
-                display: "flex",
-                marginBottom: "100px"
-            }}
+            className="Content"
         >
             <AboutMe />
             <ContactMe />

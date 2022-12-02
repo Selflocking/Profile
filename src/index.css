@@ -2,24 +2,12 @@
   background-color: rgb(13 17 23);
   color: rgb(201 209 217);
   font-size: 16px;
+  /* margin:0;
+  padding: 0; */
 }
 
 
 a {
   color:rgb(88 166 255);
   text-decoration: none;
-}
-
-.Button {
-  background-color: transparent;
-  border-width: 0px;
-  color: rgb(88 166 255);
-  margin: 2px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.Button:hover {
-  background-color: rgb(48 54 61);
-  border-radius: 4px;
 }

@@ -5,13 +5,7 @@ import Content from './Content'
 
 const SplitLine = () => {
   return (
-    <hr
-      style={{
-        borderWidth: "1px 0 0 0",
-        // borderColor: "rgb(48 54 61)"
-        margin: "20px 0"
-      }}
-    />
+    <hr className="SplitLine" />
   )
 }
 
@@ -20,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <Profile />
-      <SplitLine/>
+      <SplitLine />
       <Content />
-      <SplitLine/>
+      <SplitLine />
       <Footer />
     </div>
   )

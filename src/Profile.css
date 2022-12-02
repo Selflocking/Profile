@@ -1,0 +1,21 @@
+.Profile {
+    height: 64px;
+    margin-top: 32px;
+    font-size: 2rem;
+    display: flex;
+}
+
+.AvatarContainer{
+    text-align: center;
+}
+
+.Avatar {
+    border-radius: 24px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.Nickname {
+    vertical-align: middle;
+    margin-left: 12px;
+}
