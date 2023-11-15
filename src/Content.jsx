@@ -4,7 +4,6 @@ import "./Content.css";
 const aboutMe = "A undergraduate student in computer science."
 
 function Button({ text, url }) {
-
     return (
         <a
             className="Button"
@@ -33,8 +32,9 @@ function ContactMe() {
         >
             <h3>Contact Me</h3>
             <div className="Buttons">
+                {/* <Button text="Blog" url="https://blog.yunshu.site" /> */}
+                <Button text="Email" url="mailto:im@yunshu.site" />
                 <Button text="GitHub" url="https://github.com/Selflocking" />
-                <Button text="Blog" url="https://blog.yunshu.site" />
                 <Button text="Mastodon" url="https://o3o.ca/@YunShu" />
             </div>
         </section>
