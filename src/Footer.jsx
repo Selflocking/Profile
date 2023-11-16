@@ -8,7 +8,9 @@ function Footer() {
             {`Copyright © ${year} `}
             <a href='/'>YunShu</a>
             {" · "}
-            <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2020029697号-1</a>
+            <a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">冀ICP备2020029697号-1</a>
+            {" · "}
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=13050902001780" rel="noreferrer" target="_blank">冀公网安备13050902001780</a>
         </footer>
     )
 }
