@@ -1,4 +1,7 @@
 .Footer {
     height: 32px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
